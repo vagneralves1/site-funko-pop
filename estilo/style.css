@@ -21,13 +21,10 @@ body{
     */
 }
 
-header{
-
-}
-
 header > section{
     background-color: #172A3A;
     width: 100%;
+    height: 45px;
     position: fixed; 
 
     display: grid;
@@ -49,50 +46,79 @@ nav #menu{
     display: none;
 }
 
-nav > div > a{
+nav a.opç{
     display: inline-block;
-    background-color: #172A3A;
     text-decoration: none;
-    text-align: left;
-    border: 2px solid #0d202f;
-    border-radius: 5px 5px 0px 0px;
-    color: #f5d3a6;
-    font-size: 1.1em; 
-    margin-top: 5px;
+    color: #f6c079;
     padding: 10px;
 }
 
-nav > div > a:hover{
-    background-color: #142332;
-    color: #fbc57f;
+nav li.topico{
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 5px;
+    border-radius: 5px 5px 0px 0px;
 }
 
 nav #estoque{
     grid-area: estoque;
-    margin-left: 15px;
-    margin-right: 4px;
+    margin-left: 10px;
 }
 
 nav #carrinho{
     grid-area: carrinho;
-    margin-right: 4px;
+    margin-left: 4px;
 }
 
 nav #suporte{
     grid-area: suporte;
+    margin-left: 4px;
 }
 
-@media(max-width: 450px){
-    nav #menu{
-        display: block;
-        margin-left: 10px;
-        width: 100px;
-        text-align: center;
-    }
-    nav #estoque, #carrinho, #suporte{
+nav a.opç:hover{
+    background-color: #1f3240;
+    color: #d49c53;
+    transition-duration: 0.4s;
+}
+
+@media(max-width: 400px){
+    #estoque, #carrinho, #suporte{
         display: none;
     }
-    nav #menu #estoque:hover{
-        display:block;
+
+    nav #menu{
+        display: block;
+        margin-left: 20px;
+    }
+    nav li#menu ul#opçoes{
+        display: none;
+    } 
+
+    nav li#menu .topico_in{
+        display: block;
+    }
+
+    nav li#menu a.opç_in{
+        display: block;
+        text-decoration: none;
+        background-color: #20374a;
+        color: white;
+        width: 80px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    nav li#menu a.opç_in:hover{
+        background-color: #294863;
+    }
+
+    nav li#menu:hover > ul#opçoes{
+        display: block;
     }
 }
+
+
+header > h1#titulo{
+    padding-top: 50px;
+}
+
