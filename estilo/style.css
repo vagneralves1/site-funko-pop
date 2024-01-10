@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(219, 219, 219);
+}
+
+:root{
+    --dourado : #f7b35a;
+
+
+    /*
+        #21BAE6 azul
+        #FC9ED0 rosa
+        #F0E3F9 rosa claro
+        #BF825D dorado
+    */
+}
+
+header{
+
+}
+
+header > section{
+    background-color: #172A3A;
+    width: 100%;
+    position: fixed; 
+
+    display: grid;
+    grid-template-areas: 
+    "estoque carrinho suporte titulo"
+    ;
+}
+
+header > section > h1{
+    color: white;
+    font-size: 1.2em;
+    text-align: right;
+    padding: 10px 10px 0px 10px;
+    margin-right: 10px; 
+    grid-area: titulo;
+}
+
+nav #menu{
+    display: none;
+}
+
+nav > div > a{
+    display: inline-block;
+    background-color: #172A3A;
+    text-decoration: none;
+    text-align: left;
+    border: 2px solid #0d202f;
+    border-radius: 5px 5px 0px 0px;
+    color: #f5d3a6;
+    font-size: 1.1em; 
+    margin-top: 5px;
+    padding: 10px;
+}
+
+nav > div > a:hover{
+    background-color: #142332;
+    color: #fbc57f;
+}
+
+nav #estoque{
+    grid-area: estoque;
+    margin-left: 15px;
+    margin-right: 4px;
+}
+
+nav #carrinho{
+    grid-area: carrinho;
+    margin-right: 4px;
+}
+
+nav #suporte{
+    grid-area: suporte;
+}
+
+@media(max-width: 450px){
+    nav #menu{
+        display: block;
+        margin-left: 10px;
+        width: 100px;
+        text-align: center;
+    }
+    nav #estoque, #carrinho, #suporte{
+        display: none;
+    }
+    nav #menu #estoque:hover{
+        display:block;
+    }
+}
