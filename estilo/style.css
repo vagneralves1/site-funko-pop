@@ -41,7 +41,7 @@ nav #menu{
 nav a.opç{
     display: inline-block;
     text-decoration: none;
-    color: #f6c079;
+    color: #e4a95a;
     padding: 10px;
 }
 
@@ -124,9 +124,8 @@ header .linha{
 }
 
 main > nav{
-    background-color: rgb(19, 97, 128);
-    padding: 10px;
-    max-width: 230px;
+    background-color: #1d93d7; 
+    max-width: 180px;
     height: 71vh;
 }
 
@@ -134,20 +133,61 @@ main > nav .topico{
     display: block;
     text-decoration: none;
     font-size: 1.1em;
+    padding: 5px;
+    padding-left: 30px;
     color: white;
+}
+
+main > nav .topico:hover{
+    background-color: #0881c7;
+    padding-left: 40px;
+    transition-duration: 0.3s;
 }
 
 main > nav .topico_p{
     display: block;
     text-decoration: none;
     font-size: 1.1em;
-    color: rgb(44, 35, 78);
+    padding: 5px;
+    text-align: center;
+    color: #d7eafc;
+}
+
+main > nav .topico_p:hover{
+    background-color: #0881c7;
+    color: #5bb9ef;
+    text-align: left;
+    padding-left: 50px;
+    transition-duration: 0.3s;
 }
 
 main > nav .topico_cx{
     display: none;
 }
 
-main > nav .topico_p:hover > .topico_cx{
+.check{
+    display: none;
+}
+
+input:checked + .topico_principal .topico_p{
+    background-color: #0881c7;
+    color: #5bb9ef;
+    text-align: left;
+    padding-left: 10px;
+    transition-duration: 0.3s;
+}
+
+input:checked + .topico_principal .topico_cx{
     display: block;
+}
+
+main > section{
+    background-color: #FF3366;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+main .funko-img{
+    width: 100%;
+    border-radius: 8px;
 }
