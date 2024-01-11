@@ -73,7 +73,7 @@ nav a.opç:hover{
     transition-duration: 0.4s;
 }
 
-@media(max-width: 410px){
+@media(max-width: 418px){
     #estoque, #carrinho, #suporte{
         display: none;
     }
