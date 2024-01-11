@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: rgb(233, 233, 233);
+    background-color: white;
 }
 
 header > section{
@@ -110,8 +110,8 @@ nav a.opç:hover{
 }
 
 header  h1#titulo{
-    background-image: linear-gradient(to bottom, #00916E 28%, rgb(233, 233, 233)); 
-    color: #038466;
+    background-color: #00916E; 
+    color: white;
     padding-top: 70px;
     padding-bottom: 50px;
     text-align: center;
@@ -137,7 +137,6 @@ main{
 
 main > nav{
     background-color: #04906f; 
-    margin-top: 10px;
     max-width: 180px;
     min-width: 100px;
     grid-area: catalogo;
@@ -172,6 +171,7 @@ main > nav .topico_p{
     font-size: 1.1em;
     padding: 5px;
     text-align: center;
+    background-color: #008767;
     color: #46ecc5;
 }
 
@@ -204,6 +204,7 @@ input:checked + .topico_principal .topico_cx{
 }
 
 main > section{
+    background-color: rgb(233, 233, 233);
     margin: auto;
     padding: 10px;
     max-width: 1000px;
@@ -224,6 +225,12 @@ main > section{
         grid-template-areas: 
         "fila1 fila2 fila3"
     ;
+    }
+}
+
+@media(max-width: 510px){
+    section > div.produto p.frete{
+        font-size: 1.1em;
     }
 }
 
@@ -287,7 +294,7 @@ main > section h1{
 }
 
 main > section a:hover > h1{
-    color: blue;
+    color: rgb(1, 1, 196);
     padding-left: 15px;
     transition-duration: 0.2s;
 }
