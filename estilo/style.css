@@ -123,10 +123,29 @@ header .linha{
     color: black;
 }
 
+main{
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+    "catalogo produtos"
+    ;
+    
+}
+
 main > nav{
     background-color: #1d93d7; 
     max-width: 180px;
-    height: 71vh;
+    min-width: 100px;
+    grid-area: catalogo;
+}
+
+main > nav .topico_principal{
+    list-style-type: none;
+}
+
+main > nav .topico-ind{
+    list-style-type: none;
 }
 
 main > nav .topico{
@@ -181,22 +200,69 @@ input:checked + .topico_principal .topico_cx{
     display: block;
 }
 
-main > section{ /* #FF3366*/
+main > section{
     margin: auto;
     padding: 10px;
     max-width: 1000px;
     margin-bottom: 10px;
+    grid-area: produtos;
+
+    display: grid;
+    grid-template-areas: 
+    "fila1 fila2"
+    "fila3 fila3"
+    ;
+    gap: 10px;
+}
+
+@media(min-width: 740px){
+    main > section{
+        display: grid;
+        grid-template-areas: 
+        "fila1 fila2 fila3"
+    ;
+    }
+}
+
+@media(max-width: 480px){
+    section > div.produto h1{
+        font-size: 1em;
+    }
+    section > div.produto a:hover > h1{
+        padding-left: 30px;
+    }
+    section > div.produto p.valor-anterior{
+        font-size: 0.7em;
+    }
+    section > div.produto p.valor-atual{
+        font-size: 1.1em;
+    }
+    section > div.produto p.frete{
+        font-size: 0.7em;
+    }
+
+    main > nav .topico_p{
+        font-size: 1em;
+    }
+
+    main > nav .topico_p:hover{
+        padding-left: 30px;
+    }
+
+    main > nav .topico{
+        font-size: 1em;
+    }
 }
 
 main > section div.produto{
     background-color: white;
     max-width: 300px;
+    min-width: 100px;
     margin: auto;
 }
 
 main .funko-img{
     width: 100%;
-    border-radius: 8px;
 }
 
 main > section a{
@@ -238,4 +304,25 @@ main > section .frete{
     text-align: center;
     margin-top: 6px;
     padding: 5px;
+}
+
+main > section .fileira1{
+    grid-area: fila1;
+}
+
+main > section .fileira2{
+    grid-area: fila2;
+}
+
+main > section .fileira3{
+    grid-area: fila3;
+}
+
+footer{
+    background-color: #172A3A;
+    height: 50px;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 20px;
 }
