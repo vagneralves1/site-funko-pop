@@ -73,7 +73,7 @@ nav a.opç:hover{
     transition-duration: 0.4s;
 }
 
-@media(max-width: 400px){
+@media(max-width: 410px){
     #estoque, #carrinho, #suporte{
         display: none;
     }
@@ -135,6 +135,7 @@ main{
 
 main > nav{
     background-color: #1d93d7; 
+    margin-top: 10px;
     max-width: 180px;
     min-width: 100px;
     grid-area: catalogo;
@@ -229,7 +230,7 @@ main > section{
         font-size: 1em;
     }
     section > div.produto a:hover > h1{
-        padding-left: 30px;
+        padding-left: 17px;
     }
     section > div.produto p.valor-anterior{
         font-size: 0.7em;
@@ -251,6 +252,11 @@ main > section{
 
     main > nav .topico{
         font-size: 1em;
+        padding-left: 20px;
+    }
+
+    main > nav .topico:hover{
+        padding-left: 35px;
     }
 }
 
@@ -280,8 +286,8 @@ main > section h1{
 
 main > section a:hover > h1{
     color: blue;
-    padding-left: 50px;
-    transition-duration: 0.3s;
+    padding-left: 15px;
+    transition-duration: 0.2s;
 }
 
 main > section .valor-anterior{
