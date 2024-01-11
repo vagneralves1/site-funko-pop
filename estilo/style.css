@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(233, 233, 233);
 }
 
 header > section{
@@ -110,6 +110,8 @@ nav a.opç:hover{
 }
 
 header  h1#titulo{
+    background-image: linear-gradient(to bottom, #00916E 28%, rgb(233, 233, 233)); 
+    color: #038466;
     padding-top: 70px;
     padding-bottom: 50px;
     text-align: center;
@@ -134,7 +136,7 @@ main{
 }
 
 main > nav{
-    background-color: #1d93d7; 
+    background-color: #04906f; 
     margin-top: 10px;
     max-width: 180px;
     min-width: 100px;
@@ -155,11 +157,11 @@ main > nav .topico{
     font-size: 1.1em;
     padding: 5px;
     padding-left: 30px;
-    color: white;
+    color: #94f8e1;
 }
 
 main > nav .topico:hover{
-    background-color: #0881c7;
+    background-color: #08b28b;
     padding-left: 40px;
     transition-duration: 0.3s;
 }
@@ -170,14 +172,14 @@ main > nav .topico_p{
     font-size: 1.1em;
     padding: 5px;
     text-align: center;
-    color: #d7eafc;
+    color: #46ecc5;
 }
 
 main > nav .topico_p:hover{
-    background-color: #0881c7;
-    color: #5bb9ef;
+    background-color: #04785d;
+    color: #49bba1;
     text-align: left;
-    padding-left: 50px;
+    padding-left: 47px;
     transition-duration: 0.3s;
 }
 
@@ -190,8 +192,8 @@ main > nav .topico_cx{
 }
 
 input:checked + .topico_principal .topico_p{
-    background-color: #0881c7;
-    color: #5bb9ef;
+    background-color: #04785d;
+    color: #49bba1;
     text-align: left;
     padding-left: 10px;
     transition-duration: 0.3s;
