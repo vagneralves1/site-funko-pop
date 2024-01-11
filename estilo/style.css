@@ -38,6 +38,20 @@ nav #menu{
     display: none;
 }
 
+nav li#menu a.opç_in{
+    display: block;
+    text-decoration: none;
+    background-color: #20374a;
+    color: white;
+    width: 120px;
+    padding: 5px;
+    text-align: center;
+}
+
+nav li#menu a.opç_in:hover{
+    background-color: #294863;
+}
+
 nav a.opç{
     display: inline-block;
     text-decoration: none;
@@ -80,7 +94,7 @@ nav a.opç:hover{
 
     nav #menu{
         display: block;
-        margin-left: 20px;
+        margin-left: 10px;
     }
     nav li#menu ul#opçoes{
         display: none;
@@ -88,20 +102,6 @@ nav a.opç:hover{
 
     nav li#menu .topico_in{
         display: block;
-    }
-
-    nav li#menu a.opç_in{
-        display: block;
-        text-decoration: none;
-        background-color: #20374a;
-        color: white;
-        width: 80px;
-        padding: 5px;
-        text-align: center;
-    }
-
-    nav li#menu a.opç_in:hover{
-        background-color: #294863;
     }
 
     nav li#menu:hover > ul#opçoes{
