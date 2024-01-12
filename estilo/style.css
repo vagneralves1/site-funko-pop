@@ -126,7 +126,6 @@ header .linha{
 }
 
 main{
-    max-width: 1000px;
     margin: auto;
     display: grid;
     grid-template-areas:
@@ -209,7 +208,6 @@ main > section{
     background-color: rgb(233, 233, 233);
     margin: auto;
     padding: 10px;
-    max-width: 1000px;
     margin-bottom: 10px;
     grid-area: produtos;
 
@@ -226,7 +224,16 @@ main > section{
         display: grid;
         grid-template-areas: 
         "fila1 fila2 fila3"
-    ;
+        ;
+    }
+}
+
+@media(min-width: 1000px){
+    main > section{
+        display: grid;
+        grid-template-areas: 
+        "fila1 fila2 fila3 fila3"
+        ;
     }
 }
 
